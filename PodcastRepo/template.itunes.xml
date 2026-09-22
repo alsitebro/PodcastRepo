@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" 
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"  
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>{{podcast_title}}</title>
+        <author>{{podcast_author}}</author>
+        <itunes:author>{{podcast_author}}</itunes:author>
+        <itunes:email>{{author_email}}</itunes:email>
+        <itunes:category text="{{podcast_category}}" />
+        <image>
+            <url>{{image_url}}</url>
+            <title>{{podcast_title}}</title>
+            <link>{{podcast_url}}</link>
+        </image>
+        <itunes:owner>
+            <itunes:name>{{owner}}</itunes:name>
+            <itunes:email>{{owner_email}}</itunes:email>
+        </itunes:owner>
+        <itunes:keywords>{{keywords}}</itunes:keywords>
+        <copyright>{{copyright}}</copyright>
+        <description>{{short_podcast_description}}</description>
+        <language>{{language}}</language>
+        <itunes:explicit>{{explicit}}</itunes:explicit>
+        <pubDate>{{pub_date}}</pubDate>
+        <link>{{feed_url}}</link>
+        <itunes:image href="{{image_url}}" />
+        <item>
+            <author>{{episode_author}}</author>
+            <itunes:author>{{episode_author}}</itunes:author>
+            <title>{{episode_title}}</title>
+            <pubDate>{{episode_pub_date}}</pubDate>
+            <enclosure url="{{episode_audio_url}}" type="{{episode_audio_type}}" length="{{episode_audio_length}}" />
+            <itunes:duration>{{episode_duration}}</itunes:duration>
+            <guid isPermaLink="false">{{episode_guid}}</guid>
+            <itunes:explicit>{{episode_explicit}}</itunes:explicit>
+            <description>{{episode_description}}</description>
+        </item>
+    </channel>
+</rss>

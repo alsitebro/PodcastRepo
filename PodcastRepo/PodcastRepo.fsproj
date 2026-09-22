@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Models/ErrorViewModel.fs"/>
+        <Compile Include="Models/AtomTemplate.fs"/>
+        <Compile Include="Models/GooglePlayTemplate.fs"/>
+        <Compile Include="Models/ItunesTemplate.fs"/>
+        <Compile Include="Models/RawVoiceTemplate.fs"/>
+        <Compile Include="Controllers/HomeController.fs"/>
+        <Compile Include="Program.fs"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="10.0.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="template.atom.xml" />
+      <Content Include="template.itunes.xml" />
+      <Content Include="template.rawvoice.xml" />
+      <Content Include="template.googleplay.xml" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/">
+    <channel>
+        <title>{{podcast_title}}</title>
+        <rawvoice:rating>{{rawvoice_rating}}</rawvoice:rating>
+        <rawvoice:location>{{rawvoice_location}}</rawvoice:location>
+        <rawvoice:frequency>{{rawvoice_frequency}}</rawvoice:frequency>
+        <author>{{author}}</author>
+        <image>
+            <url>{{image_url}}</url>
+            <title>{{podcast_title}}</title>
+            <link>{{podcast_url}}</link>
+        </image>
+        <copyright>{{copyright}}</copyright>
+        <description>{{short_podcast_description}}</description>
+        <language>{{language}}</language>
+        <pubDate>{{pub_date}}</pubDate>
+        <link>{{feed_url}}</link>
+        <item>
+            <author>{{episode_author}}</author>
+            <title>{{episode_title}}</title>
+            <pubDate>{{episode_pub_date}}</pubDate>
+            <enclosure url="{{episode_audio_url}}" type="{{episode_audio_type}}" length="{{episode_audio_length}}" />
+            <guid isPermaLink="false">{{episode_guid}}</guid>
+            <description>{{episode_description}}</description>
+        </item>
+    </channel>
+</rss>
