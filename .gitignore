@@ -3,3 +3,6 @@ bin
 .idea
 .ai
 .DS_Store
+.fake
+node_modules
+.env

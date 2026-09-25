@@ -1,0 +1,6 @@
+services:
+  mongo:
+    image: mongodb/mongodb-atlas-local:latest
+    restart: always
+    ports:
+      - "27017:27017"
